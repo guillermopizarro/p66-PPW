@@ -1,0 +1,15 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+.item {
+    border: 1px solid gray;
+    padding: 10px;
+} 
