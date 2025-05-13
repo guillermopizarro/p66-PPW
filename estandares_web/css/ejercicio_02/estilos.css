@@ -1,7 +1,26 @@
 .box {
     font-size: 30px;
-    color: blue;
     border: 5px black solid;
     padding: 10px;
-    margin: 30px;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 44px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 35px;
+}
+
+h1, h2, h3 {
+    color: blue;
 }
