@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template: 100px 40px 1fr 40px / 1fr;
+    grid-template-areas: "header" "left" "content" "footer";
+    height: 100vh;
+}
+
+.item {
+    padding: 10px;
+}
+
+.header {
+    grid-area: header;
+    font-size: 35px;
+}
+
+.nav {
+    grid-area: left;
+    text-align: center;
+}
+
+.content {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+a {
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 10px;
+    background-color: cyan;
+}
+
+a:hover {
+    border: 1px solid gray;
+    background-color: burlywood;
+} 
+
