@@ -1,0 +1,31 @@
+h1 {
+    font-size: 44px;
+    color:green;
+}
+
+h2 {
+    font-size: 34px;
+    color:orange;
+}
+
+p {
+    font-size: 30px;
+    color:grey;
+}
+
+.box {
+    font-size: 30px;
+    color: blue;
+    border: 5px black solid;
+    padding: 10px;
+    margin: 30px;
+}
+
+form.box {
+    padding: 30px;
+}
+
+#form-correo {
+    color: black;
+    font-size: 20px;
+}
