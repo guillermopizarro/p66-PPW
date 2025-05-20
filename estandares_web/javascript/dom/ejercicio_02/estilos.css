@@ -1,0 +1,21 @@
+a {
+    border: 1px solid gray;
+    padding: 5px;
+    background-color: rgb(40, 109, 193);
+    color: aliceblue;
+    font-size: 18px;
+    display: block;
+    margin: 5px;
+    width: 200px;
+}
+
+a:hover {
+    border: 1px solid gray;
+    background-color: rgb(131, 232, 222);
+    color: black;
+} 
+
+a:active {
+    background-color: rgb(133, 66, 159);
+    color: white;
+}
