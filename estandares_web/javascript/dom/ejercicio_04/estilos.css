@@ -1,0 +1,9 @@
+#box {
+    width: auto;
+    border: 1px solid black;
+    position: absolute;
+    background-color: cadetblue;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 8px 8px 5px rgb(208, 204, 204);
+}
