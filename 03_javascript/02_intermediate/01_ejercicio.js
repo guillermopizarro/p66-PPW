@@ -20,3 +20,41 @@ console.log('USO DEL FOREACH')
 console.log('=========================================================')
 
 articulos.forEach( (articulo) => imprimir_articulo(articulo) )
+
+console.log('=========================================================')
+console.log('USO DEL SOME')
+console.log('=========================================================')
+
+let articulos_baratos = articulos.some( (articulo) => articulo.costo <= 100 )
+console.log(articulos_baratos)
+
+console.log('=========================================================')
+console.log('USO DEL FILTER')
+console.log('=========================================================')
+
+let articulos_baratos_lst = articulos.filter( (articulo) => articulo.costo <= 1000 )
+articulos_baratos_lst.forEach( (articulo) => imprimir_articulo(articulo) )
+
+console.log('=========================================================')
+console.log('USO DEL MAP')
+console.log('=========================================================')
+
+let articulos_actualizados = articulos.map( (dato) => dato.nombre.toUpperCase() )
+articulos_actualizados.forEach( (dato) => console.log(dato) )
+
+
+let articulos_actualizados2 = articulos.map( 
+    (dato) => { 
+        dato.nombre = dato.nombre.toUpperCase() 
+        return dato
+    }
+)
+articulos_actualizados2.forEach( (articulo) => imprimir_articulo(articulo) )
+
+console.log('==================================')
+console.log('Uso de FIND')
+console.log('==================================')
+
+//articulos.forEach( (articulo) => imprimir_articulo(articulo) )
+let articulo_encontrado = articulos.find( (dato) => dato.nombre == 'TV SONY' )
+console.log( articulo_encontrado )
