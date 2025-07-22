@@ -37,7 +37,7 @@ const invocacionSincrona = function(error, data) {
     cargar_datos(URL_API+data.results[0].id, function(error2, data2){
         if (error2)
             return console.error(error2)
-
+        
         crear_personaje(data2)
         cargar_datos(URL_API+data.results[1].id, function(error3, data3){
             crear_personaje(data3)
