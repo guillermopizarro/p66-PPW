@@ -1,5 +1,5 @@
 {
-  "name": "01_basic",
+  "name": "02_intermediate",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
@@ -7,9 +7,5 @@
   },
   "author": "Guillermo Pizarro",
   "license": "GPL-3.0",
-  "description": "",
-  "dependencies": {
-    "express": "^5.1.0",
-    "nodemon": "^3.1.10"
-  }
+  "description": ""
 }
