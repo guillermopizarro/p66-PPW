@@ -38,10 +38,14 @@ articulos_baratos_lst.forEach( (articulo) => imprimir_articulo(articulo) )
 console.log('=========================================================')
 console.log('USO DEL MAP')
 console.log('=========================================================')
+articulos.forEach( (articulo) => imprimir_articulo(articulo) )
 
 let articulos_actualizados = articulos.map( (dato) => dato.nombre.toUpperCase() )
 articulos_actualizados.forEach( (dato) => console.log(dato) )
 
+console.log('=========================================================')
+articulos.forEach( (articulo) => imprimir_articulo(articulo) )
+console.log('=========================================================')
 
 let articulos_actualizados2 = articulos.map( 
     (dato) => { 
@@ -51,10 +55,11 @@ let articulos_actualizados2 = articulos.map(
 )
 articulos_actualizados2.forEach( (articulo) => imprimir_articulo(articulo) )
 
+
 console.log('==================================')
 console.log('Uso de FIND')
 console.log('==================================')
 
-//articulos.forEach( (articulo) => imprimir_articulo(articulo) )
+articulos.forEach( (articulo) => imprimir_articulo(articulo) )
 let articulo_encontrado = articulos.find( (dato) => dato.nombre == 'TV SONY' )
 console.log( articulo_encontrado )
