@@ -16,11 +16,19 @@ async function getUser( data ) {
 }
 
 async function updateUser( data ) {
+    
+    const user = await model.findOne( { user: data.user } )
+    user.name = data.name
+    user.last_name = data.last_name
+    user.date_birth = data.date_birth
 
+    const result = await user.save()
+    return result
 }
 
 async function deleteUser( data ) {
-
+    const result = await model.deleteOne( {user: data.user} )
+    return result
 }
 
 module.exports = {

@@ -17,9 +17,15 @@ routes.post('/', function(req, res){
 })
 
 routes.put('/', function(req, res){
+    controller.updateUser( req.body )
+        .then( (data) => response.success( req, res, data, 200 ) )
+        .catch( (data) => response.error( req, res, data, 500 ) )
 })
 
 routes.delete('/', function(req, res){
+    controller.deleteUser( req.body )
+        .then( (data) => response.success( req, res, data, 200 ) )
+        .catch( (data) => response.error( req, res, data, 500 ) )
 })
 
 module.exports = routes
