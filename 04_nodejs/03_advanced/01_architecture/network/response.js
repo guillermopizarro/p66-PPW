@@ -3,5 +3,5 @@ exports.success = function(req, res, data, status) {
 }
 
 exports.error = function(req, res, data, status) {
-    res.status(status).send( {error:data, body: ''} )
+    res.status(status).send( {error:data.message, body: ''} )
 }

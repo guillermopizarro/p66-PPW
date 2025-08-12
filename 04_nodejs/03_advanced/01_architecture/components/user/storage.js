@@ -1,7 +1,7 @@
 const model = require('./model')
 
 async function addUser( data ) {
-    const user =  new model( data )
+    const user = new model( data )
     return await user.save()
 }
 
